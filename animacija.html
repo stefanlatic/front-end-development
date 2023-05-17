@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - Animacija</title>
+
+<style>
+    
+    #first-id {
+       background-color: #050210;
+       height: 250px;
+       width: 400px;
+       padding-top: 50px;
+       margin-left: auto;
+       margin-right: auto;
+       transform-origin: 50% 50%;
+      }
+
+      #second-id {
+        width:200px;
+        height: 200px;
+        border-radius: 100%;
+        background:linear-gradient( #fb5dad, #55fb9f, #b97aff);
+        margin: 0px auto;
+        animation-name: first-circle;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+}
+     #second-id::before {
+        content: "";
+        position: absolute;
+        width:200px;
+        height: 200px;
+        border-radius: 100%;
+        background:linear-gradient( #fb5dad, #55fb9f, #b97aff);
+        filter: blur(22px);
+}
+
+    #second-id::after {
+        content: "";
+        position: absolute;
+        width:200px;
+        height: 200px;
+        border-radius: 100%;
+        background: black;
+        transform: scale(0.8);
+    }
+    #third-id {
+position: absolute;
+width:200px;
+height: 200px;
+border-radius: 100%;
+background: rgb(8, 3, 81);
+animation-name: second-circle; 
+
+animation-duration: 1s;
+
+animation-iteration-count: infinite;
+
+animation-timing-function: ease-out 
+
+;
+z-index: 1;
+}
+
+
+@keyframes second-circle {
+
+from {transform:scale(0.1);
+
+}
+
+to {transform: scale(0.8);
+
+}
+
+} 
+
+
+
+    @keyframes first-circle {
+        from {
+            transform: translate(0px) rotate(0deg);
+        }
+        to {
+            transform: translate(0px) rotate(360deg)
+        }
+    }
+     
+
+   
+</style>
+
+</head>
+<body>
+    <div id="first-id">
+    <div id="second-id">
+    <div id="third-id" class="circle3"></div>
+</div>
+</div>
+   
+</body>
+</html>
