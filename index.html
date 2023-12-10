@@ -1,79 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clock</title>
-    <style>
-        #clockCanvas {
-            border: #cacaca 1px solid;
-        }
-    </style>
+    <title>Directory</title>
 </head>
+
 <body>
-    <canvas id="clockCanvas" width="500" height="500">
-        Your web browser does not support canvas element.
-    </canvas>
+    <div id="root"></div>
 
-    <script>
-
-let canvas = document.getElementById('clockCanvas');
-let ctx = canvas.getContext('2d');
-let radius = canvas.height / 2;
-let hours = 4; 
-let minutes = 23; 
-let seconds = 45; 
-
-function drawClock() {
- ctx.beginPath();
- ctx.arc(canvas.width / 2, canvas.height / 2, radius, 0, 2 * Math.PI);
- ctx.fillStyle = 'white';
- ctx.fill();
- ctx.strokeStyle = 'black';
- ctx.lineWidth = 2;
- ctx.stroke();
-}
-
-function drawHands() {
- ctx.save();
- ctx.translate(canvas.width / 2, canvas.height / 2);
- drawHand(ctx, radius - 20, seconds);
- drawHand(ctx, radius - 40, minutes);
- drawHand(ctx, radius - 60, hours);
- ctx.restore();
-}
-
-function drawHand(ctx, length, value) {
- let angle = (value / 60) * 2 * Math.PI - Math.PI / 2;
- ctx.beginPath();
- ctx.moveTo(0, 0);
- ctx.rotate(angle);
- ctx.lineTo(0, -length);
- ctx.strokeStyle = 'black';
- ctx.lineWidth = 2;
- ctx.stroke();
- ctx.rotate(-angle);
-}
-
-function updateClock() {
-   
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-   
-    let now = new Date();
-    hours = now.getHours();
-    minutes = now.getMinutes();
-    seconds = now.getSeconds();
-
-   drawClock();
-    drawHands()
-}
-
-
-setInterval(updateClock, 1000);
-
-updateClock();
-
-    </script>
 </body>
+
 </html>
