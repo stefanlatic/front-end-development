@@ -1,13 +1,172 @@
-<h1>Introduction to Front-end Development</h1>
- 
-<p>A front-end developer architects and develops client part of websites and applications using web technologies (languages):</p>
- 
-<ul>
- 
-<li style="color: red;">HTML</li>
- 
-<li style="color: green;">CSS</li>
- 
-<li style="color: blue;">JavaScript</li>
- 
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 p-3">
+                <p id="menu-text">My Website</p>  
+            </div>
+            <div class="d-none d-md-block col-5 text-right pt-4">
+                <a class="text-decoration-none" href="#">Home</a>
+                <a class="text-decoration-none text-muted" href="#">Portfolio</a>
+                <a class="text-decoration-none text-muted" href="#">Staff</a>
+                <a class="text-decoration-none text-muted" href="#">Features</a>
+                <a class="text-decoration-none text-muted" href="#">Blog</a>
+                <a class="text-decoration-none text-muted" href="#">Contact</a>
+                <a class="text-decoration-none text-muted" href="#">Download</a>
+            </div>
+            <div class="d-md-none col-5 text-end">
+                 <img id="menu-logo" class="img-fluid" src="img/menu.png" alt="Menu">
+                 <p id="text-menu" class="text-end">Menu</p>
+            </div>
+        </div>
+     </div>
+    </header>
+    <section id="hero-section" class="text-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class="flexbox font-weight-bold">
+                    <p id="picture-text">We strive to make all of our creations exquisite.</p>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="intro-section" class="py-xl-5">
+       <div class="container py-2">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <img class="img-fluid py-3" src="img/icon-1.png" alt="icon-1">
+                <h1>Purpose</h1>
+                <p>Vestibulum sapien nisi, suscipit vitae euismod vitae, imperdiet eget est. Etiam tincidunt tempus.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img class="img-fluid py-3" src="img/icon-2.png" alt="icon-2">
+                <h1>Quality</h1>
+                <p>Nam commodo risus pharetra manga egestat, nec iaculis augue lobortis. Proin eleifend enim quis.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img class="img-fluid py-3" src="img/icon-3.png" alt="icon-3">
+                <h1>Function</h1>
+                <p>Aenean et tellus id nisi vehicula fringilla. In condimentum dui eu turpis mollis turpis suscripit.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img class="img-fluid py-3" src="img/icon-4.png" alt="icon-4">
+                <h1>Elegant</h1>
+                <p>Mauris accumsan manga in placerat lacinia. Proin sit amet neque vitae nunc pulvinar varius.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="about-section">
+      <div class="container-fluid">
+        <div class="row">
+            <h1>RECENT WORK</h1>
+            <hr class="py-2">
+            <div class="col-sm-6 col-md-3 ">
+                <img class="img-fluid py-2" src="img/bike-400x340.jpg" alt="bike-picture">
+                <h1>Green Bike</h1>
+                <p>Beautiful, Travel</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img class="img-fluid py-2" src="img/surf-400x340.jpg" alt="surf-picture">
+                <h1>Salt Of The Earth</h1>
+                <p>Beautiful, Travel</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img class="img-fluid py-2" src="img/hills-400x340.jpg" alt="hills-picture">
+                <h1>Mountain Hight</h1>
+                <p>Travel</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img class="img-fluid py-2" src="img/path-400x340.jpg" alt="path-picture">
+                <h1>When A Tree Falls</h1>
+                <p>Beautiful</p>
+            </div>
+        </div>
+        <div class="row py-5">
+            <h1>FROM THE BLOG</h1>
+            <hr class="py-2">
+            <div class="col-sm-12 col-md-4 align-self-center">
+                <img class="img-fluid py-2" src="img/cow-640x340.jpg" alt="cow-picture">
+                <h1>How Now</h1>
+                <p>Posted on October 28, 2020</p>
+                <p>Proin et ligula laureet, vestibulum orci nec, eleifend purus. Quisque ullamcorper sem at ipsum elementum laoret. Integer egestas...</p>
+            </div>
+            <div class="col-sm-12 col-md-4 align-self-center">
+                <img class="img-fluid py-2" src="img/sunrise-640x340.jpg" alt="sunrise-picture">
+                <h1>Adrift By Simon Christen</h1>
+                <p>Posted on September 29, 2020</p>
+                <p>Morbi vulputate egestas sem eu cursus ligula ullamcorper non. Curabitur tristique velit eu mauris venenatis egestas. Phaselus bibendum...</p>
+            </div>
+            <div class="col-sm-12 col-md-4 align-self-center">
+                <img class="img-fluid py-2" src="img/grass-640x340.jpg" alt="grass-picture">
+                <h1>A Walk In The Park</h1>
+                <p>Posted on August 10, 2020</p>
+                <p>Proin elementum pharetra mauris sed semper. Cras lorem arcu, vulputate ut malesuada ut, tincidunt tempor lectus. Etiam adipiscing...</p>
+            </div>
+        </div>
+    </section>
+    <section id="final-section">
+    <div class="container-fluid text-light px-5">
+        <div class="row">
+        <div class="col-sm-12 col-md-4 py-5">
+              <h1>My Website</h1>
+              <p id="website-description">Quisque it dolor leo. Vivamus tincidunt in diam ac comendimentum. Quisque rutrum dolor dolor, non tincidunt tellus solicitudin vitae. Mauris a dolor ut nibh volutpat aliquam. Sed dictum manga eu massa accumsan, sit amet viverra ligula gravida. Nam vehicula ut leo aliquet sodales.</p>
+           </div> 
+           <div id="first-column" class="col-sm-12 col-md-4 py-5">
+            <h1>Recent Posts</h1>
+            <hr>
+            <p>How Now</p>
+            <hr>
+            <p>Adrift by Simon Cristen</p>
+            <hr>
+            <p>A walk In The Park</p>
+            <hr>
+            <p>Time To Think</p>
+            <hr>
+            <p>Field Of Dreams</p>
+            <hr>
+        </div> 
+        <div id="second-column" class="col-sm-12 col-md-4 py-5">
+            <h1 >Recent Work</h1>
+            <hr>
+            <p>Beautiful</p>
+            <hr>
+            <p>Travel</p>
+            <hr>
+            <p>Surreal</p>
+            <hr>
+            <p>Thoughts</p>
+            <hr>
+            <p>Unique</p>
+            <hr>
+        </div> 
+        </div>
+    </div>
+    </section>
+    <section id="footer-section">
+        <div class="row">
+           <div class="container">
+              <div class="col-12 text-center text-light">
+                  <p>© 2020 ITAcademy</p>
+              </div>
+           </div>
+        </div>
+
+    </section>
+</body>
+</html>

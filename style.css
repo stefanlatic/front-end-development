@@ -1,0 +1,130 @@
+/*******************************************HEADER*********************************************/
+
+header{
+    position: relative;
+}
+#menu-text{
+    font-size: 32px;
+    padding-left: 30px;
+    margin-bottom: 0px;
+}
+#picture-text {
+    font-size: 24px;
+}
+header a{
+    color: black;
+    margin-right: 15px;
+}
+header a:hover{
+    color:black;
+}
+header a:visited{
+    color: black;
+}
+#menu-logo{
+       width: 28px;
+}
+#text-menu{
+    display: inline-block;
+    padding-left: 3px;
+    margin-top: 30px;
+}
+/*******************************************HERO SECTION*********************************************/
+
+#hero-section {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    
+    
+
+}
+.flexbox {
+    background-color: rgb(47, 239, 175);
+    width: 60%;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 80px;
+  
+}
+
+@media (max-width: 768px) {
+    #hero-section {
+         height: 250px;
+}
+    #picture-text {
+        font-size: 16px;
+    }
+    .flexbox {
+        width: 90%;
+        margin-left: 10px;
+    }
+}
+/*******************************************INTRO SECTION*********************************************/
+
+#intro-section h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+#intro-section p{
+    font-size: 14px;
+    color: rgb(119, 118, 118);
+}
+
+/*******************************************ABOUT SECTION*********************************************/
+
+#about-section h1{
+    font-size: 18px;
+}
+#about-section img{
+    width: 100%;
+}
+#about-section{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#about-section p{
+    font-size: 14px;
+    color: rgb(119, 118, 118);
+}
+
+/*******************************************FINAL SECTION*********************************************/
+
+#final-section{
+    background-color: rgba(0, 0, 0, 0.868);
+}
+#final-section h1{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+#final-section p{
+    font-size: 14px;  
+}
+#website-description{
+    line-height: 24px;
+}
+#first-column p{
+    margin-bottom: 3px;
+}
+#first-column hr{
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+#second-column p{
+    margin-bottom: 2px;
+}
+#second-column hr{
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+/*******************************************FOOTER SECTION*********************************************/
+
+#footer-section{
+      background-color: black;
+}
+#footer-section p{
+    padding-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(111, 113, 116);
+}
