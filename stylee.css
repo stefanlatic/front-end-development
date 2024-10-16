@@ -3,13 +3,12 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(120deg,rgb(17, 155, 68),rgb(1, 53, 8));
+    background-image: linear-gradient(90deg,rgb(135, 85, 227),rgb(35, 6, 97));
     color:white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    
 }
 header{
     font-size: 1.1rem;
@@ -71,14 +70,13 @@ input {
     justify-content: space-between;
     align-items: center;
     padding-left: 0.5rem;
-    flex: 1;
 }
 .library-title{
     font-family:"Dancing Script", sans-serif ;
     color: black;
 }
 .trash-button{
-    background: rgb(5, 71, 15);
+    background: rgb(45, 2, 109);
     color:white;
     border: none;
     padding: 0.5rem;
@@ -88,24 +86,4 @@ input {
 .material-symbols-outlined{
     pointer-events: none;
 }
-.link {
-    text-decoration: none; 
-    color: rgb(0, 0, 0);
-    padding: 5px 20px;
-    position: relative;
-    margin: 0 auto; 
-    display: block;
-}
-
-
-body::after {
-    content: '';
-    display: block;
-    height: 12px; 
-    flex-shrink: 0;
-}
-
-body {
-    position: relative;
-}
-
+    
